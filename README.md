@@ -7,12 +7,12 @@ For $b>1$ and $y>0$, let
 $$
 W_b(t)=
 \begin{cases}
- b(1-1/t),&1<t\le b,\\
- b^2/t-1,&b<t<b^2,\\
+ b(1-1/t),&1 < t\le b,\\
+ b^2/t-1,&b < t < b^2,\\
  0,&\text{otherwise},
 \end{cases}
 \qquad
-D_b(y)=b(b-1)y\log b-\sum_{p\ {\rm prime}}\log p\,W_b(p/y).
+D_b(y)=b(b-1)y\log b-\sum_{p\ {\rm prime}}\log p\thinspace W_b(p/y).
 $$
 
 The earlier result at this dilation gave $\liminf D_b(y)/\sqrt y>0.003$ and left the onset open. The additional work here closes every finite gap. [Earlier eventual bound](https://github.com/leecrossley/prime-band-151-100/tree/v1.0.0)
@@ -36,7 +36,7 @@ $$
 
 Indeed each conjugate pair contributes $2h_\tau\cos(\tau\log(by))$. Bound all other cosines below by $-1$. Omitted prime powers of exponent at least three and the trivial-zero terms have favourable sign. The Mellin transform is positive at each negative even integer by its positive integral. The series over the zeros converges absolutely. [Explicit formula and the phase of the moving tent](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.0)
 
-Schoenfeld gives $|\vartheta(t)-t|\le \sqrt t\,\log^2t/(8\pi)$ for $t\ge599$ under RH. For $m\ge599$ let $\epsilon_m=\log^2m/(8\pi\sqrt m)$. For $\sqrt y\ge m$ partial summation gives
+Schoenfeld gives $|\vartheta(t)-t|\le \sqrt t\thinspace\log^2t/(8\pi)$ for $t\ge599$ under RH. For $m\ge599$ let $\epsilon_m=\log^2m/(8\pi\sqrt m)$. For $\sqrt y\ge m$ partial summation gives
 
 $$
 Q(y)/\sqrt y \ \ge\ B-2r(b-1)\epsilon_m.
