@@ -29,16 +29,16 @@ Under RH the explicit formula bounds the deficit from below by the prime-square 
 
 | Scale | How positivity is certified |
 |---|---|
-| $0<y\le10^5$ | Direct sum over primes. The deficit exceeds 0.059 at each of the 43,786 breakpoints, the upper endpoint included, and is affine between them. |
+| $0<y\le10^5$ | Direct sum over primes. The deficit exceeds 0.059 at each of the 43,786 breakpoints, the upper endpoint included, and is affine between them. At zero it extends to zero. |
 | $10^5\le y\le10^{10}$ | $Q(y)>0.110\sqrt y$ on 34,848 intervals between prime-square breakpoints. The loss is $L<0.126$ and the phase gain from 40 zeros exceeds 0.020. |
 | $10^{10}\le y\le(21{,}000{,}000)^2$ | Schoenfeld's RH bound gives $Q(y)>0.107\sqrt y$. The same phase gain still covers the loss. |
-| $y\ge(21{,}000{,}000)^2$ | Schoenfeld's RH bound alone leaves a margin above $0.00003\sqrt y$. |
+| $y\ge(21{,}000{,}000)^2$ | Schoenfeld's RH bound for $Q(y)/\sqrt y$ exceeds the full loss $L$ by more than 0.00003, with every zero at its worst phase and no phase gain. |
 
 Both lower bounds and the details of each certificate are in [PROOF.md](PROOF.md).
 
 ## Two certificates
 
-The numerical inequalities are checked twice.
+Both programs check the direct prime sums for $0<y\le10^5$, the prime-square intervals on $[10^5,10^{10}]$ and the phase gain on $[11,35]$. Only `verify.py` checks $L<0.126$, $Q(y)>0.107\sqrt y$ for $y\ge10^{10}$, the tail margin above $0.00003$ and the joins $0.110-L+0.020>0$ and $0.107-L+0.020>0$.
 
 - `verify.py` isolates 40 positive zeta zeros using FLINT and evaluates the gain on 24,000 closed intervals covering all of $[11,35]$ with rigorous ball arithmetic.
 - `independent.py` uses 24 independently isolated zeros, verified by sign changes of the real completed zeta function around published trial centres, together with a derivative bound and rational integer bounds for the prime sums. It requires no external data file.
