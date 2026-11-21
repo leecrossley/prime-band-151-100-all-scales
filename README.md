@@ -21,7 +21,7 @@ W_b(t)=
 D_b(y)=b(b-1)y\log b-\sum_{p\ {\rm prime}}\log p\thinspace W_b(p/y).
 $$
 
-[Earlier eventual bound](https://github.com/leecrossley/prime-band-151-100/tree/v1.0.0)
+[Earlier eventual bound](https://github.com/leecrossley/prime-band-151-100/tree/v1.0.1)
 
 ## Coverage of all real scales
 
