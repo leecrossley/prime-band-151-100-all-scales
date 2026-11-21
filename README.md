@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410846.svg)](https://doi.org/10.5281/zenodo.24410846)
 
+This result is now maintained in [prime-window-all-widths](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-151-100-all-scales). This repository is archived and keeps its releases and DOI.
+
 At dilation $b=151/100$, the weighted sum of primes between $y$ and $2.2801y$ is strictly below its predicted size at every real scale $y>0$, from the first prime onwards, if the Riemann hypothesis (RH) holds. No independence assumption on zeta zeros is needed.
 
 An earlier result gave this only for large enough $y$, without saying how large. Here four ranges, each with its own certificate, together cover every $y$.
